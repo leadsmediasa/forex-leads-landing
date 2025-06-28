@@ -8,9 +8,15 @@
     <meta name="description" content="Premium Forex & Crypto trading leads. Get high-converting verified leads delivered in real-time. View packages and get free demo leads today.">
     <!-- ADDED THEME COLOR -->
     <meta name="theme-color" content="#2563eb">
-    <!-- ADDED PWA LINKS -->
-    <link rel="manifest" href="/manifest.json">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- Google Analytics Tracking Code -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1THYVCPZRS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-1THYVCPZRS');
+    </script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -1152,18 +1158,8 @@
             });
         });
         
-        // Service Worker Registration
-        if('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
-                    .then(registration => {
-                        console.log('Service Worker registered: ', registration);
-                    })
-                    .catch(error => {
-                        console.log('Service Worker registration failed: ', error);
-                    });
-            });
-        }
+        // Service Worker Registration - REMOVED AS REQUESTED
+        // This code has been removed as we don't have the service worker files
     </script>
 </body>
 </html>
