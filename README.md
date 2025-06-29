@@ -1,2 +1,2 @@
-# forex-leads-landing
-"Premium Forex &amp; Crypto Leads Landing Page"
+# forex-crypto_leads
+"Premium Forex & Crypto Leads"
